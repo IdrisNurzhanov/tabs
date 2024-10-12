@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgb(55, 250, 212);
+  background: linear-gradient(
+    90deg,
+    rgba(55, 250, 212, 1) 0%,
+    rgba(149, 18, 18, 1) 51%,
+    rgba(0, 223, 255, 1) 100%
+  );
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+#hero {
+  padding: 70px 0;
+}
+.hero-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  label {
+    font-size: 35px;
+    background: #30624c;
+    padding: 16px 50px;
+    color: aliceblue;
+    border-radius: 15px;
+    margin-bottom: 100px;
+  }
+}
+.hero-typs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  img {
+    width: 200px;
+  }
+  input {
+    display: none;
+  }
+}
+#pl:checked ~ .dep,
+#pl:checked ~ .vill,
+#pl:checked ~ .atl,
+#pl:checked ~ .arr,
+#pl:checked ~ .bar,
+#pl:checked ~ .real,
+#pl:checked ~ .get,
+#pl:checked ~ .gir {
+  display: none;
+  transition: 0.8;
+}
+#bl:checked ~ .ars,
+#bl:checked ~ .che,
+#bl:checked ~ .man,
+#bl:checked ~ .bra,
+#bl:checked ~ .bar,
+#bl:checked ~ .real,
+#bl:checked ~ .get,
+#bl:checked ~ .gir {
+  display: none;
+  transition: 0.8;
+}
+#ll:checked ~ .ars,
+#ll:checked ~ .che,
+#ll:checked ~ .man,
+#ll:checked ~ .bra,
+#ll:checked ~ .dep,
+#ll:checked ~ .vill,
+#ll:checked ~ .atl,
+#ll:checked ~ .arr {
+  display: none;
+  transition: 0.8;
+}
+#pl:checked ~ .ars,
+#pl:checked ~ .che,
+#pl:checked ~ .man,
+#pl:checked ~ .bra {
+  transform: translateX(45px);
+  transition: 2.2s;
+}
+#bl:checked ~ .dep,
+#bl:checked ~ .vill,
+#bl:checked ~ .atl,
+#bl:checked ~ .arr {
+  transform: translateY(45px);
+  transition: 2.2s;
+}
+#ll:checked ~ .bar,
+#ll:checked ~ .real,
+#ll:checked ~ .get,
+#ll:checked ~ .gir {
+  transform: translateX(-45px);
+  transition: 2.2s;
+}
